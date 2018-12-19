@@ -9,3 +9,5 @@ This repo builds a docker image for running the NASA Direct Readout Laboratory -
     - If you're still using IPOPP v2+, upgrade as soon as possible because it will fail to download ancillary data for processing real soon now.
 
 This is a revision of the previous repo, https://bitbucket.org/cheewai/drl-ipopp
+
+Autobuilt image is available at [Docker Hub](https://cloud.docker.com/repository/registry-1.docker.io/cheewai/ipopp3)
