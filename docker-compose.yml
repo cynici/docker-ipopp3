@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  ipopp:
+    build: ./dockerfile
+    environment:
+      - IPOPP_UID=1000
+      - DISPLAY=${DISPLAY}
+    network_mode: host
+    volumes:
+      - ./home:/home/ipopp
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - $HOME/.Xauthority:/home/ipopp/.Xauthority:rw
