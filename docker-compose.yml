@@ -1,7 +1,8 @@
 version: '2.2'
 services:
   ipopp:
-    build: ./dockerfile
+    #build: ./dockerfile
+    image: cheewai/ipopp3
     environment:
       - IPOPP_UID=1000
       - DISPLAY=${DISPLAY}
@@ -10,3 +11,4 @@ services:
       - ./home:/home/ipopp
       - /tmp/.X11-unix:/tmp/.X11-unix
       - $HOME/.Xauthority:/home/ipopp/.Xauthority:rw
+    restart: on-failure:1
